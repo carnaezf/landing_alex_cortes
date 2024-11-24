@@ -69,6 +69,32 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Estilos Carrousel */
+.carousel-container {
+  max-width: 800px; /* Limita el ancho máximo en pantallas grandes */
+  margin: 0 auto;   /* Centra el carrusel horizontalmente */
+  padding: 10px;    /* Agrega un espacio interno */
+  width: 100%;      /* Permite que el carrusel sea fluido */
+}
+
+.carousel-inner img {
+  width: 100%;      /* Las imágenes se ajustan al ancho del contenedor */
+  height: auto;     /* Mantienen su proporción */
+  object-fit: cover; /* Recorta el contenido de la imagen si es necesario */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+@media (max-width: 576px) {
+  .carousel-container {
+    max-width: 100%; /* Permite que el carrusel ocupe todo el ancho del dispositivo */
+    padding: 5px;    /* Reduce el espacio interno */
+  }
+
+  .carousel-inner img {
+    border-radius: 5px; /* Reduce el redondeado en dispositivos pequeños */
+  }
+}
+
 
 /* Botón de WhatsApp */
 
@@ -87,7 +113,7 @@ footer a:hover {
 
 .btn-whatsapp {
   position: fixed;
-  bottom: 80px;
+  bottom: 20px;
   right: 20px;
   width: 60px;
   height: 60px;
@@ -96,10 +122,12 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1000; 
   color: var(--color-blanco);
   background-color: var(--color-whatsapp);
   transition: background-color 0.3s ease;
 }
+
 .btn-whatsapp:hover {
   background-color: var(--color-whatsapp-hover);
 }
