@@ -71,9 +71,10 @@ footer a:hover {
 
 /* Estilos Carrousel */
 .carousel-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
   max-width: 800px; /* Limita el ancho máximo en pantallas grandes */
   margin: 0 auto;   /* Centra el carrusel horizontalmente */
-  padding: 10px;    /* Agrega un espacio interno */
+  padding: 20px;    /* Agrega un espacio interno */
   width: 100%;      /* Permite que el carrusel sea fluido */
 }
 
@@ -94,6 +95,8 @@ footer a:hover {
     border-radius: 5px; /* Reduce el redondeado en dispositivos pequeños */
   }
 }
+
+
 
 
 /* Botón de WhatsApp */
